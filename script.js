@@ -1,13 +1,22 @@
 "use strict";
-const newMember = function (birthyear) {
-  let age = 2022 - birthyear;
+
+function calcAge(birthYear) {
+  const age = 2022 - birthYear;
+
+  function printAge() {
+    const output = `You are ${age}, born in ${birthYear}`;
+    console.log(output);
+
+    if (birthYear >= 1995 && birthYear <= 2010) {
+      const str = `you are genZ , ${firstName}`;
+      console.log(str);
+    }
+  }
+  printAge();
+
   return age;
-};
+}
 
-console.log(newMember(2004) + " is her age");
-
-const fruitBasket = function (mango, orange) {
-  let juice = mango + orange;
-  return juice;
-};
-console.log(fruitBasket(4, 5));
+const firstName = "Shweta"; //global variable
+calcAge(2004);
+//console.log(age); not define in global scope
