@@ -59,7 +59,7 @@ const addArrow = (a, b) => a + b;
 var x = 12;
 let y = 3;
 const z = 3;
-*/
+
 
 const shweta = {
   firstName: "Shweta",
@@ -80,3 +80,20 @@ const shweta = {
 };
 shweta.greet(); //arrow function should never be used as a arrow function
 shweta.isGenz();
+*/
+
+let age = 20;
+let oldAge = age;
+age = 21;
+console.log(age);
+console.log(oldAge);
+
+const me = {
+  name: "shweta",
+  age: 30,
+};
+
+const friend = me;
+friend.age = 27;
+console.log("friend:", friend);
+console.log("Me", me);
