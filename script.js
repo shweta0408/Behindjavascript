@@ -1,5 +1,5 @@
 "use strict";
-
+/*
 function calcAge(birthYear) {
   const age = 2022 - birthYear;
 
@@ -59,3 +59,24 @@ const addArrow = (a, b) => a + b;
 var x = 12;
 let y = 3;
 const z = 3;
+*/
+
+const shweta = {
+  firstName: "Shweta",
+  year: 2004,
+  calcAge: function () {
+    console.log(this);
+    console.log(2022 - this.year);
+
+    const isGenz = function () {
+      console.log(this.year >= 1996 && this.year <= 2010);
+    };
+    isGenz();
+  },
+  greet: function () {
+    console.log(this);
+    console.log(`Hey ${this.firstName}`);
+  },
+};
+shweta.greet(); //arrow function should never be used as a arrow function
+shweta.isGenz();
