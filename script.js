@@ -90,7 +90,7 @@ console.log(oldAge);
 
 const me = {
   name: "shweta",
-  age: 30,
+  age: 18,
 };
 
 const friend = me;
