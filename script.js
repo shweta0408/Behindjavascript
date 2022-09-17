@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 /*
 function calcAge(birthYear) {
   const age = 2022 - birthYear;
@@ -80,7 +80,7 @@ const shweta = {
 };
 shweta.greet(); //arrow function should never be used as a arrow function
 shweta.isGenz();
-*/
+
 
 let age = 20;
 let oldAge = age;
@@ -89,11 +89,34 @@ console.log(age);
 console.log(oldAge);
 
 const me = {
-  name: "shweta",
+  name: 'shweta',
   age: 18,
 };
 
+
 const friend = me;
 friend.age = 27;
-console.log("friend:", friend);
-console.log("Me", me);
+console.log('friend:', friend);
+console.log('Me', me);
+*/
+let lastName = 'Willy';
+let oldLastName = lastName;
+lastName = 'Davis';
+
+console.log(lastName, oldLastName);
+// output will be davis, willy since
+
+const jennie = {
+  firstName: 'jennie',
+  lastName: 'jacob',
+  age: 21,
+};
+
+const marriedJennie = jennie;
+marriedJennie.lastName = 'elly';
+console.log(jennie.lastName);
+console.log(marriedJennie.lastName);
+
+const jennie2 = Object.assign({}, jennie);
+//this creates a new empty object and copys the members of the existing one
+console.log(jennie2);
