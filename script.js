@@ -98,7 +98,7 @@ const friend = me;
 friend.age = 27;
 console.log('friend:', friend);
 console.log('Me', me);
-*/
+
 let lastName = 'Willy';
 let oldLastName = lastName;
 lastName = 'Davis';
@@ -125,3 +125,25 @@ console.log(jennie2 + 'is good');
 //   fetch('https://github.com/shweta0408');
 //   console.log('fetching');
 // }, 1000);
+
+*/
+
+let age = 12;
+let mYage = age;
+age = 18;
+console.log(age, mYage);
+
+let numNew = {
+  name: 'shweta',
+  job: 'Student',
+  location: 'India',
+};
+
+let helloW = {
+  name: 'billy',
+  job: 'teacher',
+  location: 'NYC',
+};
+
+helloW.location = numNew.location;
+console.log(numNew, helloW);
