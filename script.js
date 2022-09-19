@@ -119,7 +119,7 @@ console.log(marriedJennie.lastName);
 
 const jennie2 = Object.assign({}, jennie);
 //this creates a new empty object and copys the members of the existing one
-console.log(jennie2);
+console.log(jennie2 + 'is good');
 
 // setInterval(() => {
 //   fetch('https://github.com/shweta0408');
