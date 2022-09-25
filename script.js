@@ -141,9 +141,10 @@ let numNew = {
 
 let helloW = {
   name: 'billy',
+  age: '18',
   job: 'teacher',
   location: 'NYC',
 };
 
-helloW.location = numNew.location;
+numNew.location = helloW.location;
 console.log(numNew, helloW);
